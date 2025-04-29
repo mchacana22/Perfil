@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Documento en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsivo para móviles -->
+    <title>Portafolio Profesional</title> <!-- Título de la página -->
+    
+    <!-- Enlaza Bootstrap desde CDN para usar su sistema de diseño y componentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Enlaza tu hoja de estilos personalizada -->
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+
+    <!-- Barra de navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Nombre de la página (marca) -->
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+
+            <!-- Botón de menú para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú de navegación colapsable -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces de navegación -->
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <header id="inicio" class="d-flex align-items-center justify-content-center vh-100 text-center text-white" style="background: linear-gradient(#000428, #004e92);">
+        <div>
+            <h1 class="display-3">¡Hola! Soy Juan Pérez</h1> <!-- Título principal -->
+            <p class="lead">Desarrollador Web Frontend</p> <!-- Descripción breve -->
+        </div>
+    </header>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos" class="container my-5">
+        <h2 class="text-center mb-4">Mis Proyectos</h2>
+        <div class="row g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto 1"> <!-- Imagen de proyecto -->
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Descripción breve del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Descripción breve del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Descripción breve del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctame</h2>
+            <form class="row g-3">
+                <!-- Campo de nombre -->
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <!-- Campo de correo -->
+                <div class="col-md-6">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <!-- Campo de mensaje -->
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                </div>
+                <!-- Botón para enviar el formulario -->
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="text-center p-4 bg-dark text-white">
+        &copy; 2025 Juan Pérez <!-- Derechos reservados -->
+    </footer>
+
+    <!-- Scripts de Bootstrap para que funcione el menú desplegable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

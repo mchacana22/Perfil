@@ -1,0 +1,29 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la fuente principal para toda la página */
+}
+
+/* Animaciones para el encabezado */
+header h1 {
+    animation: entrada 2s ease-out; /* Aplica la animación 'entrada' al título h1 del header en 2 segundos con efecto de salida suave */
+}
+
+/* Definición de los keyframes para la animación 'entrada' */
+@keyframes entrada {
+    from {
+        opacity: 0; /* Comienza completamente transparente */
+        transform: translateY(-50px); /* Comienza desplazado 50 píxeles hacia arriba */
+    }
+    to {
+        opacity: 1; /* Termina completamente visible */
+        transform: translateY(0); /* Termina en su posición original */
+    }
+}
+
+/* Estilos responsivos personalizados */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduce el tamaño del título h1 en pantallas menores o iguales a 768px */
+    }
+}
+

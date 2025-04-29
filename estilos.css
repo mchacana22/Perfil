@@ -1,0 +1,18 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+}
+
+/* Estilos responsivos: se aplican solo si el ancho de la pantalla es menor o igual a 600 píxeles */
+@media (max-width: 600px) {
+    
+    /* Reducir el tamaño de fuente del encabezado para pantallas pequeñas */
+    header {
+        font-size: 14px;
+    }
+
+    /* Reducir el tamaño de fuente de las tablas para pantallas pequeñas */
+    table {
+        font-size: 12px;
+    }
+}
